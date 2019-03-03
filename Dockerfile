@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-RUN apk add --update curl python && \
+RUN apk add --update curl python bash && \
     rm -rf /var/cache/apk/*
 
 # https://www.musl-libc.org/faq.html (glibc and musl only partially binary compatible)
