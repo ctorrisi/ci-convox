@@ -8,6 +8,8 @@ Alpine based image with Convox CLI and custom scripts.
 Usage: update-env-vars org rack [envs]
 ```
 Where:
+ * `org` is the convox organisation
+ * `rack` is the convox rack
  * `envs` is a list of optional environment variables to provide to the app
  * `app` is implied by .convox/app or the current working directory
 
