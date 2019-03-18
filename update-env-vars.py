@@ -19,8 +19,9 @@ def runCommand(cmd):
 
 currentVars = {}
 for line in runCommand('convox env'):
-    kv = line.strip().split('=')
-    currentVars[kv[0]] = kv[1]
+    if '=' in line:
+        kv = line.strip().split('=')
+        currentVars[kv[0]] = kv[1]
 
 newVars = {}
 for i in range(3, len(args)):
